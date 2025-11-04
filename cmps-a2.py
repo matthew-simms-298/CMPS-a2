@@ -34,10 +34,17 @@ for user in users:
         
         match userRole:
             case "admin":
+                print("Notification: Admin privileges have been granted.")
+                print("Notification: Notifications Active.")
                 pass
             case "editor":
+                print("Notification: Not.")
                 pass
-            case _:
+            case "viewer":
+                print("Notification: Notifications Active.")
+                pass
+            case "viewer":
+                print("Notification: Notifications Active.")
                 pass
         break
 else:
