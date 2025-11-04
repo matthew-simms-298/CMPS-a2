@@ -1,6 +1,25 @@
 # cmps-a2.py
 # CMPS-3000 Assignment 2
 
+# User Dictionary
+users = [
+    {
+        "username": "admin",
+        "password": "admin123",
+        "role": "admin"
+    },
+    {
+        "username": "editor",
+        "password": "editor123",
+        "role": "editor"
+    },
+    {
+        "username": "viewer",
+        "password": "viewer123",
+        "role": "viewer"
+    }
+]
+# Note: If implemented properly, passwords would be properly hashed and encrypted.
 
 #Program Start
 
@@ -14,7 +33,7 @@ for user in users:
         userRole = user["role"]
         
         match userRole:
-            case "Admin":
+            case "admin":
                 pass
             case "editor":
                 pass
